@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/WeakBackground">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="Name"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_gravity="top"
+        android:id="@+id/recipe_name"
+        android:background="#AAE0E0E0"
+        />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/vars_edit_size"
+                android:gravity="center"
+                android:id="@+id/prt"
+                android:hint="Portions"
+                android:inputType="numberDecimal"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/vars_edit_size"
+                android:gravity="center"
+                android:id="@+id/time"
+                android:hint="Minutes"
+                android:inputType="number"/>
+
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textOn="Edit"
+                android:textOff="View"
+                android:textSize="@dimen/vars_edit_size"
+                android:id="@+id/editBtn"
+                android:background="#33FC0000"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="top"
+            android:inputType="text|textMultiLine"
+            android:layout_weight="1"
+            />
+
+
+
+</LinearLayout>
